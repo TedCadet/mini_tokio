@@ -19,6 +19,10 @@ impl Delay {
     pub fn new(when: Instant) -> Delay {
         Delay { when, waker: None }
     }
+
+    pub fn when(&self) -> Arc<Mutex<Instant>> {
+        Arc::new(Mutex::new(self.when))
+    }
 }
 impl Future for Delay {
     type Output = &'static str;

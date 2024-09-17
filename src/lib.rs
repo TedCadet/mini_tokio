@@ -2,7 +2,7 @@ mod my_task;
 
 use futures::task;
 use my_task::Task;
-use std::{collections::VecDeque, future::Future, sync::mpsc, task::Context, Arc};
+use std::{collections::VecDeque, future::Future, sync::mpsc, sync::Arc, task::Context};
 // type Task = Pin<Box<dyn Future<Output = ()> + Send>>;
 
 ///

@@ -6,3 +6,5 @@ edition = "2021"
 [dependencies]
 futures = "0.3"
 crossbeam = "0.8"
+tokio-stream = "0.1"
+async_stream = "0.3.5"
